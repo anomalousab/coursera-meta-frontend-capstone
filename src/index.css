@@ -12,20 +12,20 @@ body {
 .flex {
   display: flex;
 }
-.w-full {
-  width: 100%;
-}
 .flex-col {
   flex-direction: column;
 }
-.justify-between {
-  justify-content: space-between;
+.w-full {
+  width: 100%;
 }
-.items-center {
-  align-items: center;
-}
-.font-semibold {
+.semibold {
   font-weight: 600;
+}
+.bold {
+  font-weight: 800;
+}
+.extra-bold {
+  font-weight: 900;
 }
 a {
   color: inherit;
@@ -33,4 +33,34 @@ a {
 }
 li {
   list-style: none;
+}
+.w-50 {
+  width: 50%;
+}
+
+.karla {
+  font-family: karla;
+}
+.display-title {
+  font-size: 64px;
+}
+.subtitle {
+  font-size: 40px
+}
+
+.cta-button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #F4ce14;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+    .cta-button {
+      width: 140px;
+      font-size: 14px;
+    }
 }

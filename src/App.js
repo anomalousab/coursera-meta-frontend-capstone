@@ -1,11 +1,11 @@
-import {Header, Footer} from './components'
+import {Header, Footer, Specials} from './components'
 
 function App() {
   return (
     <>
       <Header/>
       <main>
-        Main
+        <Specials />
       </main>
       <Footer/>
     </>

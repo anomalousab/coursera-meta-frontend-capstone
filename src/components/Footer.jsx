@@ -4,11 +4,12 @@ import '../styles/Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="flex justify-between w-full">
-      <a href="/" className="flex footer-logo">
+    <footer className="flex justify-between">
+      <div className="footer-container">
+      <a href="/" className="flex footer-logo-a">
         <img src={logo} alt="logo" className="footer-logo"/>
       </a>
-      <div className="flex">
+      <div className="flex links-container">
         <ul>
           <h4>Doormat Links</h4>
           <li>
@@ -44,6 +45,8 @@ const Footer = () => {
             <li>Twitters</li>
         </ul>
       </div>
+      </div>
+      
     </footer>
   );
 };
