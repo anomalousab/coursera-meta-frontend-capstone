@@ -4,8 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-gray);
-  color: var(--secondary-white);
+  background-color: var(--secondary-white);
+  color: var(--secondary-gray);
 }
 .message {
   text-align: center;
