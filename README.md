@@ -15,8 +15,8 @@ Step 4: Install all the dependencies by using npm
 or
  ```npm install```
 
-Step 5: To run the tests use:
-```npm test```
+Step 5: ❗To run the tests use:
+```npm test``` and then press ```a``` to run all tests 👈🏼👈🏼👈🏼
 
 Step 7: To view the project in development mode use:
 ```npm start```
