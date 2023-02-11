@@ -1,0 +1,150 @@
+.about {
+  width: 100%;
+  height: 650px;
+  display: flex;
+}
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  justify-content: center;
+}
+.about-head-container {
+  font-family: markazi;
+}
+.about-head {
+  color: var(--secondary-gray);
+  font-size: 64px;
+  margin-bottom: 0;
+}
+.about-subhead,
+.about-desc {
+  color: var(--secondary-gray);
+}
+.about-subhead {
+  font-size: 40px;
+  margin-top: 0;
+}
+.about-desc {
+  margin-top: 40px;
+  font-size: 20px;
+  width: 60%;
+}
+
+.about-img-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.about-img1,
+.about-img2 {
+  position: absolute;
+  height: 70%;
+  bottom: 10%;
+  left: 30%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px;
+}
+.about-img2 {
+  bottom: 25%;
+  left: 45%;
+}
+
+@media screen and (max-width: 1800px) {
+  .about {
+    height: 650px;
+  }
+  .about-back {
+    height: 80%;
+  }
+  .about-head {
+    margin-top: 10px;
+  }
+  .about-subhead {
+    margin-bottom: 10px;
+  }
+  .about-desc {
+    margin-top: 0;
+    font-size: 14px;
+    width: 90%;
+  }
+  .about-img1,
+  .about-img2 {
+    height: 60%;
+    left: 20%;
+    bottom: 10%;
+    object-fit: cover;
+  }
+  .about-img2 {
+    left: 45%;
+    bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    height: 500px;
+  }
+  .about-head {
+    font-size: 50px;
+  }
+  .about-back {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+  .about-text-container,
+  .about-head-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    position: static;
+  }
+  .about-head-container {
+    margin-top: 20px;
+  }
+  .about-desc {
+    text-align: center;
+    width: 50%;
+  }
+  .about-img-container {
+    width: 80%;
+  }
+  .about-img1,
+  .about-img2 {
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+    bottom: 10%;
+    left: -10%;
+  }
+  .about-img2 {
+    bottom: 40%;
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .about {
+    flex-direction: column;
+  }
+  .about-img1,
+  .about-img2 {
+    height: 70%;
+    width: 50%;
+    bottom: 10%;
+    left: 20%;
+  }
+  .about-img2 {
+    bottom: 30%;
+    left: 55%;
+  }
+  .cta-button {
+    margin-right: 0;
+  }
+}

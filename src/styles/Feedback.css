@@ -1,0 +1,59 @@
+.feed-container {
+  background-color: var(--primary-color1);
+}
+.feeds {
+  height: 500px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+.feed-card {
+  width: 25%;
+  height: 35%;
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: var(--secondary-white);
+  position: relative;
+}
+.feed-heading {
+  margin: 0 0 20px 10px;
+}
+.feed-text {
+  margin-left: 10px;
+}
+.feed-rating {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.feed-user-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 800px) {
+  .feeds {
+    padding: 0;
+    margin: 0 10%;
+    flex-wrap: wrap;
+  }
+  .feed-card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .feeds {
+    height: 100%;
+    margin: 20px;
+  }
+  .feed-card {
+    width: 90%;
+    margin: 10px;
+    padding: 20px 20px 0;
+  }
+}

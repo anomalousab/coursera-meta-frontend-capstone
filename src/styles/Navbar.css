@@ -1,36 +1,36 @@
 .logo {
-    height: 50px ;
-    width: 200px ;
+  height: 50px;
+  width: 200px;
 }
 .container {
-    padding: 10px 10%;
-    position: sticky;
-    top: 0;
-    background-color: white;
-    z-index : 10;
-    justify-content: space-between;
+  padding: 10px 10%;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  justify-content: space-between;
 }
 .list-item {
-    margin: 0 0.5rem;
+  margin: 0 0.5rem;
 }
 .last-list-item {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        position: static;
-        align-items: center;
-    }
-    ul {
-        flex-direction: column;
-        padding : 0;
-        width: 100%;
-    }
-    li {
-        width: 100%;
-        text-align: center;
-        margin: 10px 0;
-    }
+  .container {
+    flex-direction: column;
+    position: static;
+    align-items: center;
+  }
+  ul {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+  li {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+  }
 }

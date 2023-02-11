@@ -1,10 +1,15 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+:root {
+  --primary-color1: #495e57;
+  --primary-color2: #f4ce14;
+  --secondary-color1: #ee9972;
+  --secondary-color2: #fbdabb;
+  --secondary-white: #edefee;
+  --secondary-gray: #333333;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: markazi, sans-serif ;
+  font-family: markazi, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -45,7 +50,7 @@ li {
   font-size: 64px;
 }
 .subtitle {
-  font-size: 40px
+  font-size: 40px;
 }
 
 .cta-button {
@@ -53,14 +58,17 @@ li {
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #F4ce14;
+  background-color: var(--primary-color2);
   font-weight: 600;
   font-size: 18px;
 }
+.cta-button:hover {
+  background-color: var(--secondary-color2);
+}
 
 @media screen and (max-width: 500px) {
-    .cta-button {
-      width: 140px;
-      font-size: 14px;
-    }
+  .cta-button {
+    width: 140px;
+    font-size: 14px;
+  }
 }

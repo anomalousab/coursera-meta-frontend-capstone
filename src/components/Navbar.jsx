@@ -1,33 +1,26 @@
 import React from "react";
-import logo from "../assets/logo1.png";
-import '../styles/Navbar.css'
+import { NavLink } from "react-router-dom";
+import images from "../db/images";
+import "../styles/Navbar.css";
+import { links } from "../db/constants";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="container flex justify-between items-center">
-      <a href="/" className="logo flex">
-        <img src={logo} className="logo" alt="little lemon logo"/>
-      </a>
+      <Link to="/" className="logo flex">
+        <img src={images.logo1} className="logo" alt="little lemon logo" />
+      </Link>
       <nav className="flex justify-between items-center font-semibold md:mr-10">
         <ul className="flex">
-          <li className="list-item">
-            <a href="/home">Home</a>
-          </li>
-          <li className="list-item">
-            <a href="/home">About</a>
-          </li>
-          <li className="list-item">
-            <a href="/home">Menu</a>
-          </li>
-          <li className="list-item">
-            <a href="/home">Reservations</a>
-          </li>
-          <li className="list-item">
-            <a href="/home">Order Online</a>
-          </li>
-          <li className="list-item last-list-item">
-            <a href="/home">Login</a>
-          </li>
+          {links.doormat.map((link) => (
+            <li key={link} className="list-item">
+              {/* intentionally set all links to reserve a table functionality for the final submission */}
+              <NavLink to={`${link === "Home" ? "/" : "/book"}`}>
+                {link}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

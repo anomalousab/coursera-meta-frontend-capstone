@@ -1,0 +1,12 @@
+.message-container {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-gray);
+  color: var(--secondary-white);
+}
+.message {
+  text-align: center;
+}
